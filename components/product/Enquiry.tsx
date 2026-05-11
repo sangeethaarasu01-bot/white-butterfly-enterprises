@@ -83,10 +83,10 @@ export default function EnquiryForm({ productName }: Props) {
   };
 
   return (
-    <section className="w-full bg-gray-50 py-12 px-4">
+    <section className="w-full  ">
       <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-6 sm:p-8">
         <h2 className="text-2xl font-bold text-center mb-2">
-          Export Product Enquiry
+          Import Product Enquiry
         </h2>
 
         <p className="text-gray-500 text-center mb-8">

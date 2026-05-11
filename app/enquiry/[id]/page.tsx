@@ -16,7 +16,7 @@ export default async function EnquiryPage({
   }
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-10">
+    <section className="max-w-7xl mx-auto px-4 py-10">
       <div className="grid md:grid-cols-2 gap-10">
         <div>
           <Image

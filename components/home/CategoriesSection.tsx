@@ -4,7 +4,7 @@ export default function CategoriesSection() {
   const categories = [
     {
       name: "Millets & Rice",
-      image: "/images/millets_rice/Barley.png",
+      image: "/images/millets_rice/Sorgum.jpg",
       link: "/millets",
     },
     {
@@ -34,7 +34,7 @@ export default function CategoriesSection() {
           {categories.map((cat) => (
             <div
               key={cat.name}
-              className=" p-4 sm:p-6 text-center hover:shadow-md transition cursor-pointer bg-white"
+              className=" p-4 sm:p-6 text-center hover:shadow-md transition cursor-not-allowed bg-white"
             >
               <Link href={cat.link}>
                 <div className="mb-3 flex justify-center">
@@ -43,12 +43,12 @@ export default function CategoriesSection() {
                     alt={cat.name}
                     width={200}
                     height={200}
-                    className="w-[200px] h-[200px] object-cover rounded-lg cursor-pointer"
+                    className="w-[200px] h-[200px] object-cover rounded-lg cursor-not-allowed"
                   />
                 </div>
               </Link>
               <Link href={cat.link}>
-                <p className="text-sm sm:text-base font-medium text-gray-700 cursor-pointer">
+                <p className="text-sm sm:text-base font-medium text-gray-700 cursor-not-allowed">
                   {cat.name}
                 </p>
               </Link>

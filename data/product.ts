@@ -13,7 +13,7 @@ export const products: Product[] = [
     id: 1,
     category: "Millets & Rice",
     name: "Barnyard Millet",
-    image: "/images/millets_rice/barnyard.png",
+    image: "/images/millets_rice/little-millet.jpeg",
     link: "/millets",
   },
   {
