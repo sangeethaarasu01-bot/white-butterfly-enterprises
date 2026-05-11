@@ -6,19 +6,22 @@ type Props = {
 };
 export default function ProductCard({ product }: Props) {
   return (
-    <div className=" p-4 bg-white shadow-sm cursor-pointer">
-      <Link href={product.link}>
-        <Image
-          src={product.image}
-          alt={product.name}
-          width={400}
-          height={400}
-          className="w-full h-64 object-cover rounded-lg cursor-pointer"
-        />
-        <h3 className="font-semibold text-center mt-2 hover:text-blue-600 ">
-          {product.name}
-        </h3>
-      </Link>
+    <div className=" p-4 bg-white shadow-sm ">
+      {/* <Link href={product.link}> */}
+      <Image
+        src={product.image}
+        alt={product.name}
+        width={400}
+        height={400}
+        className="w-full h-64 object-cover rounded-lg "
+      />
+      <h3 className="font-semibold text-center mt-2 hover:text-blue-600 ">
+        {product.name}
+      </h3>
+      {/* <h5 className="font-semibold text-center mt-2 hover:text-blue-600 ">
+          {product.description}
+        </h5> */}
+      {/* </Link> */}
       {/* <p className="text-sm text-gray-500">{product.category}</p> */}
       <div className="flex justify-center">
         <Link

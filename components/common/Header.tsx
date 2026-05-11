@@ -7,8 +7,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <header className="w-full bg-white shadow-md top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
           <h1 className="text-lg sm:text-xl font-bold text-blue-600">
@@ -39,7 +39,7 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu */}
-      {open && (
+      {/* {open && (
         <div className="md:hidden px-4 pb-4 flex flex-col gap-4 bg-white">
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
@@ -48,7 +48,7 @@ export default function Header() {
             Enquiry
           </button>
         </div>
-      )}
+      )} */}
     </header>
   );
 }

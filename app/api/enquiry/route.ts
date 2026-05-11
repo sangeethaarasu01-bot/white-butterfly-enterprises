@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     });
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: "sangeethaarasu01@gmail.com",
+      to: "buy@white-butterfly-enterprises.com",
       subject: `New Enquiry for ${body.productName}`,
       html: `
         <h2>New Export Enquiry</h2>
