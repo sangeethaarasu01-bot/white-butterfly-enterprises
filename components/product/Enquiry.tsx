@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import toast from "react-hot-toast";
 type Props = {
   productName: string;
 };
@@ -44,7 +45,7 @@ export default function EnquiryForm({ productName }: Props) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(formData.email)) {
-      alert("Invalid email address");
+      toast.error("Invalid email address");
       return;
     }
 
@@ -66,7 +67,7 @@ export default function EnquiryForm({ productName }: Props) {
     setLoading(false);
 
     if (data.success) {
-      alert("Enquiry submitted successfully");
+      toast.success("Enquiry submitted successfully");
 
       setFormData({
         fullName: "",
@@ -78,7 +79,7 @@ export default function EnquiryForm({ productName }: Props) {
         message: "",
       });
     } else {
-      alert("Something went wrong");
+      toast.error("Something went wrong");
     }
   };
 
@@ -179,8 +180,8 @@ export default function EnquiryForm({ productName }: Props) {
               <input
                 type="text"
                 value={productName}
-                readOnly
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
+                disabled
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 bg-gray-100 text-gray-500 cursor-not-allowed"
               />
             </div>
           </div>

@@ -26,6 +26,14 @@ export default function HeroSection() {
       image: "/images/banner/banner-4.jpg",
       link: "/spicies",
     },
+    {
+      image: "/images/banner/masala_powder.webp",
+      link: "/masala",
+    },
+    {
+      image: "/images/banner/herbal2.webp",
+      link: "/herbal",
+    },
   ];
 
   return (
