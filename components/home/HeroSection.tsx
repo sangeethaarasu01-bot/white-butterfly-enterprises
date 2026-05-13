@@ -61,15 +61,15 @@ export default function HeroSection() {
           >
             {banners.map((banner, index) => (
               <SwiperSlide key={index}>
-                {/* <a href={banner.link}> */}
-                <Image
-                  src={banner.image}
-                  alt={`banner-${index}`}
-                  width={1400}
-                  height={500}
-                  className="w-full h-[220px] sm:h-[350px] md:h-[500px] object-cover"
-                />
-                {/* </a> */}
+                <a href={banner.link}>
+                  <Image
+                    src={banner.image}
+                    alt={`banner-${index}`}
+                    width={1400}
+                    height={500}
+                    className="w-full h-[220px] sm:h-[350px] md:h-[500px] object-cover"
+                  />
+                </a>
               </SwiperSlide>
             ))}
           </Swiper>

@@ -14,7 +14,6 @@ export default function Home() {
       <FeaturedProducts
         products={products}
         onEnquiry={(product) => console.log(product)}
-        // onEnquiry={handleEnquiry}
       />
       {/* <CTASection /> */}
     </div>
