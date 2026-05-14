@@ -7,7 +7,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white shadow-md top-0 z-50">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-md ">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">

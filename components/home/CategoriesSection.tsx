@@ -33,7 +33,7 @@ export default function CategoriesSection() {
     {
       name: "Masala Powders",
       image: "/images/masala/Cumin-Powder-e1619255274195.jpg",
-      link: "/spicies",
+      link: "/masala",
     },
     {
       name: "Herbal",
