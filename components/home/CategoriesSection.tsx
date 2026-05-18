@@ -36,6 +36,21 @@ export default function CategoriesSection() {
       link: "/masala",
     },
     {
+      name: "Aachi Powders",
+      image: "/images/aachi/sambar.jpeg",
+      link: "/aachi",
+    },
+    {
+      name: "Sakthi Powders",
+      image: "/images/sakthi/red_chilli.jpeg",
+      link: "/sakthi",
+    },
+    {
+      name: "Tata Powders",
+      image: "/images/tata/meat_masala.jpeg",
+      link: "/tata",
+    },
+    {
       name: "Herbal",
       image: "/images/herbal/download.jpeg",
       link: "/herbal",

@@ -7,6 +7,9 @@ import { coconut } from "@/data/coconut";
 import { millets } from "@/data/millets";
 import { herbals } from "@/data/herbal";
 import { masala } from "@/data/masala";
+import { aachi } from "@/data/aachi";
+import { sakthi } from "@/data/sakthi";
+import { tata } from "@/data/tata";
 import EnquiryForm from "@/components/product/Enquiry";
 import Image from "next/image";
 type Params = Promise<{ category: string; id: string }>;
@@ -49,6 +52,18 @@ export default async function EnquiryPage({ params }: { params: Params }) {
 
     case "coconut":
       data = coconut;
+      break;
+
+    case "aachi":
+      data = aachi;
+      break;
+
+    case "sakthi":
+      data = sakthi;
+      break;
+
+    case "tata":
+      data = tata;
       break;
 
     default:

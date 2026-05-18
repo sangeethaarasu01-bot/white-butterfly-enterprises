@@ -38,4 +38,28 @@ export const masala: Masala[] = [
     description:
       "White Pepper Powder is a fine spice with a mild yet distinctive flavor. It is widely used in soups, sauces, and international culinary preparations.",
   },
+  {
+    id: 5,
+    name: "Chilli Powder",
+    image: "/images/masala/chilli.jpeg",
+    link: "/masala",
+    description:
+      "Chilli Powder is made from premium dried red chillies, adding rich color, spicy flavor, and authentic taste to a variety of dishes.",
+  },
+  {
+    id: 6,
+    name: "Coriander Powder",
+    image: "/images/masala/coriander.jpeg",
+    link: "/masala",
+    description:
+      "Coriander Powder is prepared from carefully selected coriander seeds, offering a mild aroma and earthy flavor for everyday cooking.",
+  },
+  {
+    id: 7,
+    name: "Turmeric Powder",
+    image: "/images/masala/turmeric.jpeg",
+    link: "/masala",
+    description:
+      "Turmeric Powder is made from high-quality turmeric roots, providing natural color, rich flavor, and traditional goodness to your recipes.",
+  },
 ];

@@ -11,9 +11,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <h1 className="text-lg sm:text-xl font-bold text-blue-600">
+          {/* <h1 className="text-lg sm:text-xl font-bold text-blue-600">
             White Butterfly
-          </h1>
+          </h1> */}
+          <img
+            src={"/images/Logo-removebg-preview.png"}
+            width="100"
+            height="100"
+          />
         </Link>
 
         {/* Desktop Menu */}

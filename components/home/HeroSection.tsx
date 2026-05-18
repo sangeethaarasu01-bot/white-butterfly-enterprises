@@ -31,6 +31,10 @@ export default function HeroSection() {
       link: "/masala",
     },
     {
+      image: "/images/banner/aachi-products.webp",
+      link: "/aachi",
+    },
+    {
       image: "/images/banner/herbal2.webp",
       link: "/herbal",
     },
