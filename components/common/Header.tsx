@@ -14,8 +14,8 @@ export default function Header() {
           <img
             src={"/images/Logo-removebg-preview.png"}
             alt="Logo"
-            width={130}
-            height={100}
+            width={160}
+            height={80}
           />
         </Link>
 
