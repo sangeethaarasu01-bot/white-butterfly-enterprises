@@ -11,10 +11,7 @@ export default function Home() {
     <div>
       <HeroSection />
       <CategoriesSection />
-      <FeaturedProducts
-        products={products}
-        onEnquiry={(product) => console.log(product)}
-      />
+      <FeaturedProducts products={products} />
       {/* <CTASection /> */}
     </div>
   );

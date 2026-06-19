@@ -2,15 +2,16 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import HeaderSearchBar from "./HeaderSearchBar";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md ">
-      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-2">
         {/* Logo */}
-        <Link href="/">
+        <Link href="/" className="shrink-0">
           <img
             src={"/images/Logo-removebg-preview.png"}
             alt="Logo"
@@ -19,14 +20,13 @@ export default function Header() {
           />
         </Link>
 
-        {/* Desktop Menu */}
-        {/* <nav className="hidden md:flex items-center gap-6 text-gray-700 font-medium">
-          <Link href="/">Home</Link>
-          <Link href="/products">Products</Link>
-        </nav> */}
+        {/* Search Bar */}
+        <div className="hidden md:flex flex-1 justify-center">
+          <HeaderSearchBar />
+        </div>
 
         {/* Right Side */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4 shrink-0">
           <a
             href="mailto:buy@white-butterfly-enterprises.com"
             className="text-blue-600 hover:underline text-xs"
@@ -39,6 +39,11 @@ export default function Header() {
         <button className="md:hidden text-2xl" onClick={() => setOpen(!open)}>
           ☰
         </button>
+      </div>
+
+      {/* Mobile Search */}
+      <div className="md:hidden px-4 pb-3">
+        <HeaderSearchBar />
       </div>
 
       {/* Mobile Menu */}

@@ -1,16 +1,14 @@
-// components/products/CategoryFilter.tsx
+import { catalogCategories } from "@/data/catalog";
 
 type Props = {
   selected: string;
   setSelected: (val: string) => void;
 };
 
-const categories = ["All", "Millets & Rice", "Pulses", "Dry Food", "Spices"];
-
 export default function CategoryFilter({ selected, setSelected }: Props) {
   return (
     <div className="flex flex-wrap gap-3 mb-6">
-      {categories.map((cat) => (
+      {catalogCategories.map((cat) => (
         <button
           key={cat}
           onClick={() => setSelected(cat)}

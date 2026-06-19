@@ -1,13 +1,16 @@
-import { Product } from "@/data/product";
+import { CatalogItem } from "@/data/catalog";
+import { getItemSubtitle } from "@/utils/searchProducts";
 import Image from "next/image";
 import Link from "next/link";
+
 type Props = {
-  product: Product;
+  product: CatalogItem;
 };
+
 export default function ProductCard({ product }: Props) {
   return (
     <div className=" p-4 bg-white shadow-sm ">
-      <Link href={product.link}>
+      <Link href={product.listingLink}>
         <Image
           src={product.image}
           alt={product.name}
@@ -18,10 +21,13 @@ export default function ProductCard({ product }: Props) {
         <h3 className="font-semibold text-center mt-2 hover:text-blue-600 ">
           {product.name}
         </h3>
+        <p className="text-xs text-gray-500 text-center mt-1">
+          {getItemSubtitle(product)}
+        </p>
       </Link>
       <div className="flex justify-center">
         <Link
-          href={`/enquiry/products/${product.id}`}
+          href={product.enquiryLink}
           className="mt-3 bg-blue-600 text-white px-3 py-1 rounded"
         >
           Enquiry
